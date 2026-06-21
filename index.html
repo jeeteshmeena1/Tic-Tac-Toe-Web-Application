@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tic Tac Toe</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>TIC TAC TOE</h1>
+
+<p class="subtitle">
+Play with your friend or challenge the Computer.
+</p>
+
+<div class="input-box">
+
+<input
+type="text"
+id="playerName"
+placeholder="Enter Your Name">
+
+</div>
+
+<div class="mode">
+
+<h3>Select Mode</h3>
+
+<label>
+
+<input
+type="radio"
+name="mode"
+value="pvp"
+checked>
+
+Player vs Player
+
+</label>
+
+<label>
+
+<input
+type="radio"
+name="mode"
+value="ai">
+
+Player vs Computer
+
+</label>
+
+</div>
+
+<div id="difficultyBox">
+
+<h3>Difficulty</h3>
+
+<select id="difficulty">
+
+<option>Easy</option>
+
+<option>Medium</option>
+
+<option>Hard</option>
+
+</select>
+
+</div>
+
+<button id="playBtn">
+
+<i class="fa-solid fa-play"></i>
+
+Start Game
+
+</button>
+
+</div>
+
+</div>
+
+<script src="js/home.js"></script>
+
+</body>
+</html>

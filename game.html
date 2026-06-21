@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="css/game.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>TIC TAC TOE</h1>
+
+        <h3 id="playerDisplay"></h3>
+
+        <!-- Score Board -->
+
+        <div class="scoreboard">
+
+            <div class="score-card">
+
+                <h2>X</h2>
+
+                <span id="scoreX">0</span>
+
+            </div>
+
+            <div class="score-card">
+
+                <h2>Draw</h2>
+
+                <span id="drawScore">0</span>
+
+            </div>
+
+            <div class="score-card">
+
+                <h2>O</h2>
+
+                <span id="scoreO">0</span>
+
+            </div>
+
+        </div>
+
+        <!-- Turn -->
+
+        <div id="turn">
+
+            Turn : X
+
+        </div>
+
+
+        <!-- Game Board -->
+
+        <div class="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button id="restartBtn">
+
+                <i class="fa-solid fa-rotate-right"></i>
+
+                Restart
+
+            </button>
+
+            <button id="newGameBtn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                New Game
+
+            </button>
+
+            <button id="homeBtn">
+
+                <i class="fa-solid fa-house"></i>
+
+                Home
+
+            </button>
+
+        </div>
+
+        <!-- Winner -->
+
+        <div id="message"></div>
+
+    </div>
+
+    <script src="js/ai.js"></script>
+    <script src="js/game.js"></script>
+
+</body>
+
+</html>
